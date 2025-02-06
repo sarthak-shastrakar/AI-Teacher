@@ -1,0 +1,128 @@
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/ai-in.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.landingPageContainer nav {
+  padding-inline: 1.2rem;
+  padding-block: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.landingPageContainer nav h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: cursive;
+  padding: 0.4rem;
+  border-radius: 7px;
+  box-shadow: 3px 3px 2px 0px rgb(219, 216, 216);
+  color: #222229;
+}
+
+.landingPageContainer nav .navlist {
+  display: flex;
+  gap: 1.6rem;
+  cursor: pointer;
+
+}
+ .landingMainContainer {
+  display: flex;
+  align-items: center;
+  padding :10rem 0rem 0rem 10rem;
+} 
+.landingMainContainer h2,p{
+padding-bottom: 1rem;
+}
+
+/* home css */
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+  text-align: center;
+
+}
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh; 
+  gap: 10vw;
+  justify-content: center;
+}
+
+
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+ border: 2px solid white;
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+}
+/* button css */
+.scene {
+  width: 10em;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ .cube {
+  color: #ccc;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.85s cubic-bezier(.17,.67,.14,.93);
+  transform-style: preserve-3d;
+  transform-origin: 100% 50%;
+  width: 10em;
+  height: 4em;
+ }
+ 
+ .cube:hover {
+  transform: rotateX(-90deg);
+ }
+ 
+ .side {
+  box-sizing: border-box;
+  position: absolute;
+  display: inline-block;
+  height: 4em;
+  width: 10em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 1.5em;
+  font-weight: bold;
+ }
+ 
+ .top {
+  background: wheat;
+  color: #222229;
+  transform: rotateX(90deg) translate3d(0, 0, 2em);
+  box-shadow: inset 0 0 0 5px #fff;
+ }
+ 
+ .front {
+  background: #222229;
+  color: #fff;
+  box-shadow: inset 0 0 0 5px #fff;
+  transform: translate3d(0, 0, 2em);
+ }

@@ -1,0 +1,47 @@
+/* Responsive page */
+@media screen and (max-width: 768px) {
+  .landingPageContainer {
+    width: fit-content;
+    height: 100vh;
+  }
+  .landingPageContainer nav .navlist {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .landingMainContainer {
+    width: auto;
+    text-align: center;
+    padding: 4rem 0rem 0rem 0rem;
+    
+  }
+  .videoContainer video{
+    width: fit-content;
+    padding-top: 1rem;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  .navList li {
+    margin: 0px 5px 10px;
+    margin-top: 11px;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+  }
+}
+
+/* home page  */
+@media screen and (max-width: 600px) {
+  .meetContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .leftPanel h2 {
+    margin-top: 25px;
+    font-family: cursive;
+  }
+  .rightPanel > img {
+    width: 100%;
+  }
+}
