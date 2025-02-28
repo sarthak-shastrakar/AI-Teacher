@@ -4,6 +4,7 @@ import bcrypt, { hash } from "bcrypt";
 
 import crypto from "crypto";
 import { Meeting } from "../models/meeting.model.js";
+
 const login = async (req, res) => {
   const { username, password } = req.body;
 
@@ -45,7 +46,7 @@ const register = async (req, res) => {
     if (existingUser) {
       return res
         .status(httpStatus.FOUND)
-        .json({ message: "USER IS ALREADY EXIST!TRY WITH ANOTHER" });
+        .json({ message: "USER IS ALREADY EXIST! PLEASE TRY WITH ANOTHER" });
     }
 
     const hashedPassword = await bcrypt.hash(password, 10);

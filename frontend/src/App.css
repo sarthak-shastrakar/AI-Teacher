@@ -1,7 +1,7 @@
 .landingPageContainer {
   width: 100vw;
   height: 100vh;
-  background: url("/public/ai-in.webp");
+  background: url("/public/brain image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -17,8 +17,8 @@
 }
 
 .landingPageContainer nav h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 800;
   font-family: cursive;
   padding: 0.4rem;
   border-radius: 7px;

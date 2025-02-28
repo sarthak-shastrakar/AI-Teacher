@@ -50,145 +50,171 @@ export default function Authentication() {
   };
 
   return (
-    <div className="LoginPage">
-      <ul className="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <Grid container className="MainPage">
+    // <div className="LoginPage">
+    //   <ul className="circles">
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //     <li></li>
+    //   </ul>
+    //   <Grid container className="MainPage">
         
-        <CssBaseline />
-        <Grid />
-        <Grid
-          item
-          id="InnerPart"
-          xs={12}
-          sm={8}
-          md={5}
-          component={Paper}
-          elevation={6}
-          square
-        >
-          <Box
-            sx={{
-              my: 8,
-              mx: 4,
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
-            <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-              <LockOutlinedIcon />
-            </Avatar>
+    //     <CssBaseline />
+    //     <Grid />
+    //     <Grid
+    //       item
+    //       id="InnerPart"
+    //       xs={12}
+    //       sm={8}
+    //       md={5}
+    //       component={Paper}
+    //       elevation={6}
+    //       square
+    //     >
+    //       <Box
+    //         sx={{
+    //           my: 8,
+    //           mx: 4,
+    //           display: "flex",
+    //           flexDirection: "column",
+    //           alignItems: "center",
+    //         }}
+    //       >
+    //         <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
+    //           <LockOutlinedIcon />
+    //         </Avatar>
 
-            <div>
-              <button className="button">
-                <div className="blob1"></div>
-                <div className="blob2"></div>
-                <div
-                  className="inner"
-                  variant={formState === 0 ? "contained" : ""}
-                  onClick={() => {
-                    setFormState(0);
-                  }}
-                >
-                  Sign In
-                </div>
-              </button>
-              <button className="button">
-                <div className="blob1"></div>
-                <div className="blob2"></div>
-                <div
-                  className="inner"
-                  variant={formState === 1 ? "contained" : ""}
-                  onClick={() => {
-                    setFormState(1);
-                  }}
-                >
-                  {" "}
-                  Sign Up
-                </div>
-              </button>
-            </div>
+    //         <div>
+    //           <button className="button">
+    //             <div className="blob1"></div>
+    //             <div className="blob2"></div>
+    //             <div
+    //               className="inner"
+    //               variant={formState === 0 ? "contained" : ""}
+    //               onClick={() => {
+    //                 setFormState(0);
+    //               }}
+    //             >
+    //               Sign In
+    //             </div>
+    //           </button>
+    //           <button className="button">
+    //             <div className="blob1"></div>
+    //             <div className="blob2"></div>
+    //             <div
+    //               className="inner"
+    //               variant={formState === 1 ? "contained" : ""}
+    //               onClick={() => {
+    //                 setFormState(1);
+    //               }}
+    //             >
+    //               {" "}
+    //               Sign Up
+    //             </div>
+    //           </button>
+    //         </div>
 
-            <Box component="form" noValidate sx={{ mt: 1 }}>
-              {formState === 1 ? (
-                <TextField
-                  margin="normal"
-                  required
-                  fullWidth
-                  id="username"
-                  label="Your Full Name"
-                  name="username"
-                  value={name}
-                  autoFocus
-                  onChange={(e) => setName(e.target.value)}
-                />
-              ) : (
-                <></>
-              )}
+    //         <Box component="form" noValidate sx={{ mt: 1 }}>
+    //           {formState === 1 ? (
+    //             <TextField
+    //               margin="normal"
+    //               required
+    //               fullWidth
+    //               id="username"
+    //               label="Your Full Name"
+    //               name="username"
+    //               value={name}
+    //               autoFocus
+    //               onChange={(e) => setName(e.target.value)}
+    //             />
+    //           ) : (
+    //             <></>
+    //           )}
 
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                name="Username"
-                label="Username"
-                id="username"
-                value={username}
-                autoFocus
-                onChange={(e) => setUsername(e.target.value)}
-              />
+    //           <TextField
+    //             margin="normal"
+    //             required
+    //             fullWidth
+    //             name="Username"
+    //             label="Username"
+    //             id="username"
+    //             value={username}
+    //             autoFocus
+    //             onChange={(e) => setUsername(e.target.value)}
+    //           />
 
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                name="password"
-                label="Password"
-                type="password"
-                id="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
+    //           <TextField
+    //             margin="normal"
+    //             required
+    //             fullWidth
+    //             name="password"
+    //             label="Password"
+    //             type="password"
+    //             id="password"
+    //             value={password}
+    //             onChange={(e) => setPassword(e.target.value)}
+    //           />
 
-              <p style={{ color: "red" }}>{error}</p>
+    //           <p style={{ color: "red" }}>{error}</p>
 
-              <Button
-                type="button"
-                fullWidth
-                variant="contained"
-                sx={{ mt: 3, mb: 2 }}
-                onClick={handleAuth}
-                className="glitch"
-              >
-                {formState === 0 ? "LogIn" : "Register"}
-              </Button>
-            </Box>
-          </Box>
-        </Grid>
-      </Grid>
+    //           <Button
+    //             type="button"
+    //             fullWidth
+    //             variant="contained"
+    //             sx={{ mt: 3, mb: 2 }}
+    //             onClick={handleAuth}
+    //             className="glitch"
+    //           >
+    //             {formState === 0 ? "LogIn" : "Register"}
+    //           </Button>
+    //         </Box>
+    //       </Box>
+    //     </Grid>
+    //   </Grid>
 
-      <Snackbar open={open} autoHideDuration={4000} message={message} />
-    </div>
+    //   <Snackbar open={open} autoHideDuration={4000} message={message} />
+    // </div>
+
+	<div className="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true" />
+
+			<div class="signup">
+        <form action="">
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="" required="" />
+					<input type="email" name="email" placeholder="Email" required="" />
+					<input type="password" name="pswd" placeholder="Password" required="" />
+					<button>Sign up</button>
+          </form>
+			</div>
+
+			 <div class="login">
+
+          <form action="">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="" />
+					<input type="password" name="pswd" placeholder="Password" required="" />
+					<button>Login</button>
+				</form>
+			</div> 
+	</div>
+  
+
   );
 }

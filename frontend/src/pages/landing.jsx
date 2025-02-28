@@ -39,8 +39,8 @@ export default function LandingPage() {
 
       <div className="landingMainContainer">
         <div>
-          <h1>Ace Your Exam With AI Tutoring.</h1>
-          <p>Data-Driven Insights for Continuous Improvement</p>
+          <h1>Find Inner Peace with Guided Meditation, Breathing, and Mood Insights.</h1>
+          <p>Breathing, Meditation, and Mood Tracking Made Simple</p>
 
           <div className="scene">
             <div className="cube">
